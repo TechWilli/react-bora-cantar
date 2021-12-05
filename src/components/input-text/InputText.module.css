@@ -1,0 +1,14 @@
+.inputText {
+  border: none;
+  padding: .55rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: 250ms;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.inputText:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(177, 177, 177);
+  border: 2px solid rgb(17, 17, 17);
+}

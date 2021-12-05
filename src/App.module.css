@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #525252;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.titleWrapper {
+  background-color: rgb(66, 66, 66);
+  padding: .5rem 1rem;
+  width: 40rem;
+  text-align: center;
+  border-radius: .25rem;
+  box-shadow: 0 0 8px rgba(0 , 0, 0, 0.1);
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.main {
+  width: 100%;
+  max-width: 40rem;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: .25rem;
+  box-shadow: 0 0 8px rgba(0 , 0, 0, 0.1);
+  position: relative;
+}
+
+.searchArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchResult {
+  height: calc(100% - 4rem);
+  border-radius: .25rem;
+  padding-top: 1rem;
+}
+
+.searchResult > .loading {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+.lyrics {
+  /* pre-line para o html interpretar corretamente o \n */
+  white-space: pre-line;
+  position: relative;
+  line-height: 1.5;
+}
+
+.loadingSpinner {
+  border: 4px solid rgb(231, 231, 231);
+  border-top: 4px solid rgb(66, 66, 66);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  margin-right: 1rem;
+  position: relative;
+  top: 5px;
+  transition: ease-out;
+  animation: spin 1000ms infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
